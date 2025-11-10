@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Creepster&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+//estilizando a header 
+header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right, center;
+
+  .box-header {
+    margin-top: 30px;
+    width: 80%;
+    height: 10vh;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
+    nav {
+      width: 40%;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+}
+
+.box-banner {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .box-titulo {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      margin:2vh;
+    }
+
+    p{
+        font-size: 1.5rem;
+        color: #04031C;
+        margin:2vh;
+    }
+  }
+}
+
+.btn-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3vh;
+
+    .btnAzul{
+        background-color:#1173D4;
+        color:white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        width: 30%;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    .btnBranco{
+        background-color: #F9FAFB;
+        color: #1173D4;
+        border:1px solid #1173D4;
+        border-radius: 10px;
+        font-size: 1rem;
+        width: 30%;
+        height: 6vh;
+        cursor: pointer;
+
+    }
+}
+ 
+
+//estilizando a main - primeira secction a importancia dos exames
+.primeiro-box{
+    height: 70vh;
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .box-exames{
+        height: 80vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2{
+        font-size: 3rem;
+        background: linear-gradient(to right, #4247a2 0%, #52b095 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        margin:2vh;
+        }
+
+        p{
+            color:#04031C;
+            
+        }
+ 
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin:20px;
+
+
+            article{
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                background-color: #F9FAFB;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 10vw;
+                width:20%;
+                gap: 10px;
+
+                img{
+                    max-width: 35px;
+                }
+                h3,p{
+                    gap: 10px;
+                    color:#04031C;
+                }
+            }
+        
+        }
+    }
+}
+
+//estilizando a segunda section - Prevenção Feminina
+
+.segundo-box{
+    height: 115vh;
+    background-color:#FDEFEF;
+    display: flex;
+    flex-direction: column;
+    
+
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        background: linear-gradient(to right, #F9016F8A 54%, #9308859E 61%,#D038AAC0 75%, #851C87 5%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        margin-top: 20px;
+
+    }
+    .card-fem{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+        margin:10vh;
+        
+        article{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 15%;
+                min-width: 250px;
+                box-sizing: border-box;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                background-color: #FEFEFE;
+
+            img{
+                margin-top:5px;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+            
+            h3{
+                font-size: 1rem;
+                margin:2vh;
+                text-align: left;   
+            }
+
+            ul{
+                list-style: disc;
+                padding-left: 20px;
+
+                li{
+                font-size: 0.8rem;
+                text-align:left;
+                line-height: 1.4;
+                margin-bottom: 8px
+                
+                }
+            }
+
+
+        }
+    }
+}    
+
+//estlizando o terceiro box - Prevenção Masculina
+
+.terceiro-box{
+    height: 115vh;
+    background-color:#F5F6F8;
+    display: flex;
+    flex-direction: column;
+    
+
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        background: linear-gradient(to right, #3373D2 , #6F95C7 ,#7BB5F5, #0074EE, #5EA7EF, #5EA7EF);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        margin-top: 20px;
+
+    }
+    .card-masc{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+        margin:10vh;
+        
+        article{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 15%;
+                box-sizing: border-box;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                background-color: #FEFEFE;
+
+            img{
+                margin-top:5px;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+            
+            h3{
+                font-size: 1rem;
+                margin:2vh;
+                text-align: left;   
+            }
+
+            ul{
+                list-style: disc;
+                padding-left: 20px;
+
+                li{
+                font-size: 0.8rem;
+                text-align:left;
+                line-height: 1.4;
+                margin-bottom: 8px
+                
+                }
+            }
+
+
+        }
+    }
+}   
+
+//estilizando o quarto box - Alertas Impportantes
+
+.quarto-box{
+    height: 70vh;
+    background-color:#F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        font-size: 3rem;
+        background: linear-gradient(to right, #1173D4 0%, #33CC73 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        text-align: center;
+        margin: 1vh;
+        margin-bottom:60px;
+    }
+
+    .box-alerta{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 45px;
+    
+        article{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 30%;
+            gap:15px;
+
+            
+        }
+    }
+}
+
+.coracao{
+    background-color:#F9D5E5;
+    border-radius: 10px;
+
+    img{
+        padding: 10px;
+    }
+
+    h3,p{
+      color:#AD346A;
+      padding:10px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.vacina{
+    background-color:#D4EDDA;
+    border-radius: 10px;
+
+    img{
+        padding: 10px;
+    }
+
+    h3,p{
+      color:#244A2D;
+      padding:10px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.escudo{
+    background-color:#CFE2F3;
+    border-radius: 10px;
+
+    img{
+        padding: 10px;
+    }
+
+    h3,p{
+      color:#2769A3;
+      padding:10px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.cerebro{
+    background-color:#FFE9C2;
+    border-radius: 10px;
+
+    img{
+        padding: 10px;
+    }
+
+    h3,p{
+      color:#976C00;
+      padding:10px;
+    }
+    p{
+        text-align: center;
+    }
+
+}
+
+// estilizando o footer
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 35vh;
+    background-color:#313461;
+    color:#FFFFFF;
+    
+
+    .box-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap:30px;
+        margin-bottom: 20px;
+        margin:15px;
+
+        article{
+            gap:15px;
+            padding: 1rem;
+
+            h3{
+                padding: 2rem;
+                text-align: left;
+            }
+
+            ul{
+                li{
+                    list-style: none;
+                    padding: 0.3rem;
+                    a{
+                    text-decoration: none;
+                    text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .aviso{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        border-top: 1.5px solid #9FABBC;
+        padding: 1.5rem;
+        text-align: center;
+
+            p{
+                text-align:center;
+                margin-bottom: 6px;
+            }
+    }
+}
