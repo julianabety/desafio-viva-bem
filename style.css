@@ -81,7 +81,7 @@ header .box-header nav a {
   border: none;
   border-radius: 10px;
   font-size: 1rem;
-  width: 30%;
+  width: 32%;
   height: 6vh;
   cursor: pointer;
 }
@@ -91,17 +91,18 @@ header .box-header nav a {
   border: 1px solid #1173D4;
   border-radius: 10px;
   font-size: 1rem;
-  width: 30%;
+  width: 32%;
   height: 6vh;
   cursor: pointer;
 }
 
 .primeiro-box {
-  height: 70vh;
+  height: 105vh;
   background-color: #F8F9FA;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 .primeiro-box .box-exames {
   height: 80vh;
@@ -120,40 +121,48 @@ header .box-header nav a {
   color: transparent;
   font-weight: bold;
   margin: 2vh;
+  margin-top: 6rem;
 }
 .primeiro-box .box-exames p {
   color: #04031C;
 }
 .primeiro-box .box-exames section {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  align-content: center;
   text-align: center;
   margin: 20px;
+  padding: 2rem;
 }
-.primeiro-box .box-exames section article {
+.primeiro-box .box-exames section div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.primeiro-box .box-exames section div article {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #F9FAFB;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 10vw;
-  width: 20%;
+  height: 20vh;
+  width: 20rem;
   gap: 10px;
 }
-.primeiro-box .box-exames section article img {
+.primeiro-box .box-exames section div article img {
   max-width: 35px;
 }
-.primeiro-box .box-exames section article h3, .primeiro-box .box-exames section article p {
+.primeiro-box .box-exames section div article h3, .primeiro-box .box-exames section div article p {
   gap: 10px;
   color: #04031C;
 }
 
 .segundo-box {
-  height: 115vh;
+  height: 120vh;
   background-color: #FDEFEF;
   display: flex;
   flex-direction: column;
@@ -167,21 +176,22 @@ header .box-header nav a {
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 6rem;
 }
 .segundo-box .card-fem {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 10vh;
+  margin: 6vh;
 }
 .segundo-box .card-fem article {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 15%;
+  width: 20rem;
   min-width: 250px;
   box-sizing: border-box;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -189,7 +199,7 @@ header .box-header nav a {
   background-color: #FEFEFE;
 }
 .segundo-box .card-fem article img {
-  margin-top: 5px;
+  margin-top: 2rem;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -204,7 +214,7 @@ header .box-header nav a {
 }
 .segundo-box .card-fem article ul {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 1.5rem;
 }
 .segundo-box .card-fem article ul li {
   font-size: 0.8rem;
@@ -228,28 +238,30 @@ header .box-header nav a {
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 6rem;
 }
 .terceiro-box .card-masc {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 10vh;
+  margin: 6vh;
 }
 .terceiro-box .card-masc article {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 15%;
+  width: 20rem;
+  min-width: 250px;
   box-sizing: border-box;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #FEFEFE;
 }
 .terceiro-box .card-masc article img {
-  margin-top: 5px;
+  margin-top: 2rem;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -279,7 +291,6 @@ header .box-header nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .quarto-box h2 {
   font-size: 3rem;
@@ -290,21 +301,29 @@ header .box-header nav a {
   color: transparent;
   font-weight: bold;
   text-align: center;
-  margin: 1vh;
-  margin-bottom: 60px;
+  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
-.quarto-box .box-alerta {
+.quarto-box section {
+  width: 65vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 45px;
-}
-.quarto-box .box-alerta article {
-  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+.quarto-box section .box-alerta {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.quarto-box section .box-alerta article {
+  display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
   width: 30%;
-  gap: 15px;
+  min-width: 250px;
 }
 
 .coracao {
@@ -313,12 +332,11 @@ header .box-header nav a {
 }
 .coracao img {
   padding: 10px;
+  align-items: center;
 }
 .coracao h3, .coracao p {
   color: #AD346A;
-  padding: 10px;
-}
-.coracao p {
+  padding: 1rem;
   text-align: center;
 }
 
@@ -381,17 +399,15 @@ footer .box-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 30px;
-  margin-bottom: 20px;
+  gap: 1rem;
   margin: 15px;
 }
 footer .box-footer article {
-  gap: 15px;
   padding: 1rem;
 }
 footer .box-footer article h3 {
-  padding: 2rem;
   text-align: left;
+  padding: 0.5rem;
 }
 footer .box-footer article ul li {
   list-style: none;
@@ -412,4 +428,93 @@ footer .aviso {
 footer .aviso p {
   text-align: center;
   margin-bottom: 6px;
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    background-image: none;
+  }
+  header .box-header img {
+    width: 30%;
+  }
+  header .box-header nav a {
+    font-size: 0.7rem;
+    padding: 4px;
+  }
+  header .box-banner .box-titulo h2 {
+    font-size: 2.5rem;
+  }
+  header .box-banner .box-titulo .btnAzul {
+    width: 50%;
+  }
+  .primeiro-box .box-exames {
+    height: auto;
+  }
+  .primeiro-box .box-exames h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .primeiro-box .box-exames p {
+    font-size: 0.8rem;
+  }
+  .primeiro-box .box-exames .cards-exame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+  }
+  .primeiro-box .box-exames .cards-exame article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .segundo-box {
+    height: auto;
+  }
+  .segundo-box h2 {
+    font-size: 1.5rem;
+  }
+  .segundo-box article {
+    height: auto;
+  }
+  .terceiro-box {
+    height: auto;
+  }
+  .terceiro-box h2 {
+    font-size: 1.5rem;
+  }
+  .terceiro-box article {
+    height: auto;
+  }
+  .quarto-box {
+    height: auto;
+  }
+  .quarto-box h2 {
+    font-size: 1.5rem;
+  }
+  .quarto-box .box-alerta {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .quarto-box .box-alerta article h3, .quarto-box .box-alerta article p {
+    font-size: 0.8rem;
+  }
+  footer {
+    height: auto;
+  }
+  footer .box-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .box-footer article {
+    align-items: center;
+    text-align: center;
+  }
+  footer .box-footer article h3, footer .box-footer article p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  footer .box-footer article ul li {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

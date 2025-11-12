@@ -88,7 +88,7 @@ header {
         border: none;
         border-radius: 10px;
         font-size: 1rem;
-        width: 30%;
+        width: 32%;
         height: 6vh;
         cursor: pointer;
     }
@@ -99,7 +99,7 @@ header {
         border:1px solid #1173D4;
         border-radius: 10px;
         font-size: 1rem;
-        width: 30%;
+        width: 32%;
         height: 6vh;
         cursor: pointer;
 
@@ -109,11 +109,13 @@ header {
 
 //estilizando a main - primeira secction a importancia dos exames
 .primeiro-box{
-    height: 70vh;
+    height:105vh;
     background-color: #F8F9FA;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    
 
     .box-exames{
         height: 80vh;
@@ -132,6 +134,7 @@ header {
         color: transparent;
         font-weight: bold;
         margin:2vh;
+        margin-top: 6rem;
         }
 
         p{
@@ -141,23 +144,29 @@ header {
  
         section{
             display: flex;
-            flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            align-content: center;
             text-align: center;
             margin:20px;
+            padding: 2rem;
 
-
+            div{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap:2rem;
+                
             article{
                 box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
                 border-radius: 10px;
                 background-color: #F9FAFB;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
-                height: 10vw;
-                width:20%;
+                height: 20vh;
+                width:20rem;
                 gap: 10px;
 
                 img{
@@ -167,6 +176,7 @@ header {
                     gap: 10px;
                     color:#04031C;
                 }
+            }   
             }
         
         }
@@ -176,7 +186,7 @@ header {
 //estilizando a segunda section - Prevenção Feminina
 
 .segundo-box{
-    height: 115vh;
+    height: 120vh;
     background-color:#FDEFEF;
     display: flex;
     flex-direction: column;
@@ -191,22 +201,23 @@ header {
         background-clip: text;
         color: transparent;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 6rem;
 
     }
     .card-fem{
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap:30px;
-        margin:10vh;
+        margin:6vh;
         
         article{
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                width: 15%;
+                width: 20rem;
                 min-width: 250px;
                 box-sizing: border-box;
                 box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -214,7 +225,7 @@ header {
                 background-color: #FEFEFE;
 
             img{
-                margin-top:5px;
+                margin-top:2rem;
                 width: 90px;
                 height: 90px;
                 border-radius: 50%;
@@ -230,7 +241,7 @@ header {
 
             ul{
                 list-style: disc;
-                padding-left: 20px;
+                padding-left: 1.5rem;
 
                 li{
                 font-size: 0.8rem;
@@ -264,29 +275,31 @@ header {
         background-clip: text;
         color: transparent;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 6rem;
 
     }
     .card-masc{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
         gap:30px;
-        margin:10vh;
+        margin:6vh;
         
         article{
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                width: 15%;
+                width: 20rem;
+                min-width: 250px;
                 box-sizing: border-box;
                 box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
                 border-radius: 10px;
                 background-color: #FEFEFE;
 
             img{
-                margin-top:5px;
+                margin-top:2rem;
                 width: 90px;
                 height: 90px;
                 border-radius: 50%;
@@ -326,7 +339,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
 
     h2{
         font-size: 3rem;
@@ -337,25 +350,32 @@ header {
         color: transparent;
         font-weight: bold;
         text-align: center;
-        margin: 1vh;
-        margin-bottom:60px;
+        margin: 2rem;
+        margin-top: 2rem;
+        margin-bottom:3rem;
     }
+
+    section{
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     .box-alerta{
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
-        margin-bottom: 45px;
+        gap:1.5rem;
+        padding:1rem;
     
         article{
             display: flex;
-            align-items: center;
             flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
             width: 30%;
-            gap:15px;
-
-            
+            min-width: 250px;
         }
+    }
     }
 }
 
@@ -365,14 +385,13 @@ header {
 
     img{
         padding: 10px;
+        align-items: center;
     }
 
     h3,p{
       color:#AD346A;
-      padding:10px;
-    }
-    p{
-        text-align: center;
+      padding:1rem;
+      text-align: center;
     }
 }
 
@@ -445,17 +464,15 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap:30px;
-        margin-bottom: 20px;
+        gap:1rem;
         margin:15px;
 
         article{
-            gap:15px;
             padding: 1rem;
 
             h3{
-                padding: 2rem;
                 text-align: left;
+                padding: 0.5rem;
             }
 
             ul{
@@ -485,3 +502,128 @@ footer{
             }
     }
 }
+
+// responsividade
+// responsividade celular
+
+@media(min-width:201px) and (max-width: 500px) {
+    header{
+    background-image: none;
+    .box-header{
+        img{
+            width: 30%;
+        }
+        nav{
+            a{
+                font-size: 0.7rem;
+                padding: 4px;
+            }
+        }
+    }
+    .box-banner{
+        
+        .box-titulo{
+            h2{
+                font-size:2.5rem;
+            }
+        .btnAzul{
+            width: 50%;
+        } 
+        }
+    }
+    }
+
+
+    .primeiro-box{
+
+        .box-exames{
+            height: auto;
+        h2{
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        .cards-exame{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 2rem;
+
+            article{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+        }
+    }
+
+    .segundo-box{
+        height: auto;
+        h2{
+            font-size: 1.5rem;
+        }
+        article{
+            height: auto;
+        }
+
+    }
+
+    .terceiro-box{
+        height: auto;
+        h2{
+            font-size: 1.5rem;
+        }
+        article{
+            height: auto;
+        }
+    }
+
+    .quarto-box{
+        height: auto;
+
+        h2{
+            font-size: 1.5rem;
+        }
+        .box-alerta{
+            flex-direction: column;
+            justify-content: center;
+            article{
+
+                h3,p{
+                    font-size: 0.8rem;
+                }
+
+            }
+        }
+    }
+
+    footer{
+        height: auto;
+        
+        .box-footer{
+
+            flex-direction: column;
+            justify-content: center;
+
+            article{
+                align-items: center;
+                text-align: center;
+                h3,p{
+
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
