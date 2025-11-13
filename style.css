@@ -16,7 +16,8 @@ header {
   background-image: url("./img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom right, center;
+  background-position: bottom right;
+  padding-top: 8vh;
 }
 header .box-header {
   margin-top: 30px;
@@ -38,6 +39,7 @@ header .box-header nav {
 header .box-header nav a {
   color: white;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 .box-banner {
@@ -109,6 +111,7 @@ header .box-header nav a {
   width: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -120,8 +123,7 @@ header .box-header nav a {
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  margin: 2vh;
-  margin-top: 6rem;
+  padding: 1rem;
 }
 .primeiro-box .box-exames p {
   color: #04031C;
@@ -137,6 +139,7 @@ header .box-header nav a {
 }
 .primeiro-box .box-exames section div {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
@@ -315,14 +318,14 @@ header .box-header nav a {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 .quarto-box section .box-alerta article {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  width: 30%;
+  width: 100%;
   min-width: 250px;
 }
 
@@ -414,8 +417,8 @@ footer .box-footer article ul li {
   padding: 0.3rem;
 }
 footer .box-footer article ul li a {
-  text-decoration: none;
   text-align: left;
+  color: white;
 }
 footer .aviso {
   width: 100%;
@@ -432,27 +435,36 @@ footer .aviso p {
 
 @media (min-width: 201px) and (max-width: 500px) {
   header {
+    height: auto;
     background-image: none;
   }
   header .box-header img {
     width: 30%;
   }
   header .box-header nav a {
+    width: 100%;
     font-size: 0.7rem;
-    padding: 4px;
+    padding: 0.2rem;
+  }
+  header .box-banner .box-titulo {
+    height: auto;
   }
   header .box-banner .box-titulo h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  header .box-banner .box-titulo p {
+    font-size: 1rem;
   }
   header .box-banner .box-titulo .btnAzul {
-    width: 50%;
+    width: 100%;
   }
   .primeiro-box .box-exames {
     height: auto;
   }
   .primeiro-box .box-exames h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    gap: 1rem;
   }
   .primeiro-box .box-exames p {
     font-size: 0.8rem;
@@ -501,6 +513,7 @@ footer .aviso p {
   }
   footer {
     height: auto;
+    padding-top: 12vh;
   }
   footer .box-footer {
     flex-direction: column;
@@ -516,5 +529,74 @@ footer .aviso p {
   }
   footer .box-footer article ul li {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background: none;
+  }
+  header .box-banner {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  header .box-banner p {
+    width: 85%;
+  }
+  header .btn-banner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header .btn-banner .btnAzul,
+  header .btn-banner .btnBranco {
+    width: 80%;
+  }
+  .primeiro-box .box-exames {
+    height: auto;
+  }
+  .primeiro-box .cards-exame div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .segundo-box {
+    height: auto;
+  }
+  .segundo-box .card-fem {
+    flex-direction: column;
+    align-items: center;
+  }
+  .terceiro-box {
+    height: auto;
+  }
+  .terceiro-box .card-masc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quarto-box {
+    height: auto;
+  }
+  .quarto-box .box-alerta {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+  }
+}
+@media (max-width: 1500px) {
+  header .box-titulo {
+    width: 68%;
+  }
+  .primeiro-box .box-exames {
+    height: auto;
+  }
+  .primeiro-box .box-exames .cards-exame div {
+    flex-direction: column;
+  }
+  .quarto-box {
+    height: auto;
+  }
+  footer {
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
